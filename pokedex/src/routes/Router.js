@@ -7,17 +7,11 @@ import Pokedex from "../pages/Pokedex";
 export function Router () {
     return (
         <BrowserRouter>
-
-        <Routes>
-
-        <Route index element={<Home />}/>
-        <Route path="/pokedex" element={<Pokedex />}/>
-        <Route path="/pokemon/:idDoPokemon" element={<PokeDetails/>}/>
-
-
-        </Routes>
-
-        
+            <Routes>
+                <Route index element={<Home />}/>
+                <Route path="/pokedex" element={<Pokedex />}/>
+                <Route path="/pokemon/:idDoPokemon" element={<PokeDetails/>}/>
+            </Routes>
         </BrowserRouter>
     )
 }
