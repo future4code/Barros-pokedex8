@@ -23,8 +23,9 @@ export default function Home() {
   }
 
   const pokeMap = pokemon&&pokemon.map ((poke, index) =>{
-    return <Card key={index} name={poke.data.name} img={poke.data.sprites.front_default}></Card>
+    return <Card key={index} name={poke.data.name} img={poke.data.sprites.front_default} types={poke.data.types}></Card>
   })
+
 
 
   return (

@@ -5,8 +5,9 @@ export const HomeContainer = styled.div`
   width: 100%;
   main{
    display: grid;
-   grid-template-columns: repeat(7, 1fr);
-   gap: 5px;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   justify-items: center;
 }
 
 
