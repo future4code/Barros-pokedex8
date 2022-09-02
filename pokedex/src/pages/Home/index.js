@@ -8,7 +8,6 @@ import axios from 'axios'
 
 export default function Home() {
   const [pokemon, setPokemon] = useState([])
-  //const [data, loading, error] = useRequestData(BASE_URL)
 
   useEffect(() => {
     getPokemon()

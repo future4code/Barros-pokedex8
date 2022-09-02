@@ -21,6 +21,7 @@ button{
   padding: 20px;
   border-radius: 10px ;
   align-items: center ;
+  border: 0;
   
 }
 
