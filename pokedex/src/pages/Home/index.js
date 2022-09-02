@@ -1,12 +1,18 @@
 import React from 'react'
+import {HeaderContainer} from './style'
+import poke from './poke.png'
 
-function Home() {
-  return (
-    <div>
-        <h1>Home</h1>
+  export default function Home() {
+    return (
+      <div>
+        <HeaderContainer>
+          <button>Ver Minha Pokedex </button>
+          <h1>PoKeDex</h1>
+          <img src={poke} alt="imagem"/>
+        </HeaderContainer>
+
+     
 
     </div>
   )
 }
-
-export default Home
