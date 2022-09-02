@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
+  height: 100%;
+  width: 100%;
   main{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   justify-items: center;
 }
+
+
 `

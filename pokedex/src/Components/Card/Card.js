@@ -1,15 +1,21 @@
 import React from "react";
-import {CardContainer} from "./style";
-export function Card({img, nome}){
+import {CardContainer, Container} from "./style";
+
+
+export function Card({img, name, types}){
   
+  
+
+
   return( 
-    <>
-    <CardContainer>
-        <img src={img} alt={nome}/>
-        <h2>{nome}</h2>
+    <Container>
+    <CardContainer className={types[0].type.name}> 
+        <img src={img} alt={name}/>
+        <h2>{name}</h2>
+        <p>{types[0].type.name}</p>
         <button>Adicionar</button>
         <button>Detalhes</button>
     </CardContainer>
-    </>
+    </Container>
   )
 }

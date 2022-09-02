@@ -1,39 +1,45 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Header } from '../../Components/Header/Header'
 import { BASE_URL } from '../../Constants/BASE_URL'
-import { useRequestData } from '../../Hooks/useRequestData'
 import { Card } from '../../Components/Card/Card'
 import { HomeContainer } from './style'
+import axios from 'axios'
+
 
 export default function Home() {
-    
-    const [data, loading, error] = useRequestData(BASE_URL)
-     
-    const pokemons = data&&data.results.map((poke) => {
-      return <li>{poke.name}</li>})
-   
-    return (
-      <>
-        <HomeContainer>
-          <Header/>
-              <main>
-                <Card 
-                  img={"http://midia.gruposinos.com.br/_midias/jpg/2016/07/13/pikachu-1590127.jpg"}
-                  nome={"pokemon"}
-                  />
+  const [pokemon, setPokemon] = useState([])
 
-                  <Card 
-                  img={"http://midia.gruposinos.com.br/_midias/jpg/2016/07/13/pikachu-1590127.jpg"}
-                  nome={"pokemon"}
-                  />
-               
-              </main>
-        </HomeContainer>
-        
-        {loading && <p>...Carregando...</p>}
-        {!loading && data && pokemons}
-        {!loading && !data && error}
+  useEffect(() => {
+    getPokemon()
+  }, [])
+
+  const getPokemon = () => {
+    let allPokemons = []
+    for ( let i = 1; i < 21; i ++){
+      allPokemons.push(`${BASE_URL}${i}`)
+    }
+    const response = axios.all(allPokemons.map((allPokemon)=> axios.get(allPokemon))).then((res)=> setPokemon(res))
+    return response
+  }
+
+  const pokeMap = pokemon&&pokemon.map ((poke, index) =>{
+    return <Card key={index} name={poke.data.name} img={poke.data.sprites.front_default} types={poke.data.types}></Card>
+  })
+
+
+
+  return (
+    <>
+      <HomeContainer>
+        <Header />
+        <main>
+          {pokeMap}
+        </main>
+     
+      </HomeContainer>
+
       
+
     </>
   )
 }
