@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 
+
+export const Container = styled.div `
+
+width: 100%;
+`
+
 export const CardContainer = styled.div`
+  width: 200px;
   background-color: #2B6EB6 ;
   text-align: center;
   padding: 10px;
@@ -9,9 +16,9 @@ export const CardContainer = styled.div`
   border-radius: 15px; 
   border: 3px solid #FFCB05;
   align-items: center ;
+  cursor: pointer;
 
   background: linear-gradient(to bottom right, #f3ff47 60%, #0489dc 65%);
-
 
 
   img{
