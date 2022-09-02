@@ -6,7 +6,7 @@ font-family: 'Pokemon Solid', sans-serif;
 color: #FFCB05;
 align-items: center;
 justify-content: space-around;
-height: 170px;
+height: 120px;
 
 
 background: #2B6EB6;
@@ -21,19 +21,29 @@ button{
   padding: 20px;
   border-radius: 10px ;
   align-items: center ;
-  border: 0;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  :hover{
+    filter: brightness(0.9);
+    
+  }
   
 }
 
 h1{
   display: flex;
-  font-size: 3em;
+  font-size: 3.8em;
   margin-bottom: 30px;
   
 }
 
 img{
-  width: 200px;
+  width: 150px;
 }
 
 `

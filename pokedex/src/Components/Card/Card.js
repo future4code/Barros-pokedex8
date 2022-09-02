@@ -4,9 +4,6 @@ import {CardContainer, Container} from "./style";
 
 export function Card({img, name, types}){
   
-  
-
-
   return( 
     <Container>
     <CardContainer className={types[0].type.name}> 

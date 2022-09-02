@@ -62,6 +62,11 @@ export const CardContainer = styled.div`
     padding: 4px 15px;
     border: none;
     cursor: pointer;
+    transition: filter 0.2s;
+  
+  :hover  { 
+    filter: brightness(0.8);}
+
   }
 
 `

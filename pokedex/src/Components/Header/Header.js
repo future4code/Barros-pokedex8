@@ -9,8 +9,8 @@ export function Header(){
 
   return(
     <HeaderContainer>
-      <button>Ver Minha Pokedex </button>
-      <h1>PoKeDex</h1>
+      <button>Ver Minha Pokédex </button>
+      <h1>PoKéDex</h1>
       <img src={poke} alt="imagem"/>
     </HeaderContainer>
   )
