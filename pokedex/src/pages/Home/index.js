@@ -26,12 +26,27 @@ export default function Home() {
     return <Card key={index} name={poke.data.name} img={poke.data.sprites.front_default} types={poke.data.types}></Card>
   })
 
+  const pokemonFilter=(name)=>{
+    const filterPoke= [];
+    if(name===''){
+      getPokemon()
+    }
 
+    for (var i in pokemon){
+      console.log(pokemon[i].data)
+
+    if(pokemon[i].data.name.includes(name)){
+      filterPoke.push(pokemon[i])
+    }
+    setPokemon(filterPoke)
+    }
+    
+  }
 
   return (
     <>
       <HomeContainer>
-        <Header />
+        <Header pokemonFilter={pokemonFilter}/>
         <main>
           {pokeMap}
         </main>
