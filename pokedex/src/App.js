@@ -3,9 +3,8 @@ import  GlobalStyle  from './global/styles';
 function App() {
   return (
     <> 
-      
-    <GlobalStyle/>
-    <Router/>
+      <GlobalStyle/>
+      <Router/>
     </>
   );
 }

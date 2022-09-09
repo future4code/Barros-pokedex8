@@ -11,7 +11,10 @@ export function Header(){
     <HeaderContainer>
       <button>Ver Minha Pokédex </button>
       <h1>PoKéDex</h1>
-      <img src={poke} alt="imagem"/>
+      <div>
+        <input type='search' placeholder='buscar pokemon...'/>
+        <img src={poke} alt="imagem"/>
+      </div>
     </HeaderContainer>
   )
 }

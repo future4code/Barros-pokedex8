@@ -11,8 +11,8 @@ align-items: center;
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   position: relative;
   text-align: center;
   padding: 15px;
@@ -43,20 +43,20 @@ export const CardContainer = styled.div`
   }
 
   img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 120px;
-    right: -50px;
+    right: -8px;
   }
 
   button{
     position: relative;
-    top: 40px;
-    right: 80px;
+    top: 7px;
+    right: 40px;
     margin: 5px;
     justify-content: space-around;
-    width: 100px;
+    width: 90px;
     height: 50px;
     border-radius: 5px;
     padding: 4px 15px;
