@@ -11,6 +11,8 @@ export default function Home() {
 
   useEffect(() => {
     getPokemon()
+
+    
   }, [])
 
   const getPokemon = () => {
@@ -28,7 +30,7 @@ export default function Home() {
 
   const pokemonFilter=(name)=>{
     const filterPoke= [];
-    if(name===''){
+    if(name ==='') {
       getPokemon()
     }
 
