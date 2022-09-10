@@ -11,7 +11,7 @@ align-items: center;
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 320px;
   height: 220px;
   position: relative;
   text-align: center;

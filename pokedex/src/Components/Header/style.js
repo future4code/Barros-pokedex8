@@ -21,23 +21,20 @@ div {
 
 div input {
   display: flex;	
-  background: #2B6EB6;
+  background: white;
   height: 30px;
   padding: 20px;
   border-radius: 10px ;
   align-items: center ;
   border: 1px solid #FFF;
-  color: #FFF;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 18px;
+  font-size: 15px;
   width: 50% ;
   cursor: text;
-  
-  
-
   }
 
-background: #2B6EB6;
+background: white;
 text-shadow: 10px 0px 0 #2B6EB6, 2px -2px 0 #2B6EB6, -2px 8px 0 #2B6EB6, -2px -2px 0 #2B6EB6, 2px 0px 0 #2B6EB6, 0px 2px 0 #2B6EB6, -2px 15px 0 #2B6EB6, 0px -2px 0 #2B6EB6;
 color: #FFCB05;
 background: #043375;   

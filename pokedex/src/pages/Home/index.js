@@ -17,7 +17,7 @@ export default function Home() {
 
   const getPokemon = () => {
     let allPokemons = []
-    for ( let i = 1; i < 21; i ++){
+    for ( let i = 1; i < 151; i ++){
       allPokemons.push(`${BASE_URL}${i}`)
     }
     const response = axios.all(allPokemons.map((allPokemon)=> axios.get(allPokemon))).then((res)=> setPokemon(res))
